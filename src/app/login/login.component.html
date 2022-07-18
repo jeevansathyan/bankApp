@@ -1,0 +1,31 @@
+<div style="height:100px ;"></div>
+<div class="container">
+<h2 class="mb-3" style="color: white;">{{cap}}</h2>
+<div class="row mt-4">
+<div class="col-4">
+<div id="login-logo-img">
+<img src="/src/assets/cmp-imgs/logo-bank.png" alt="">
+</div>
+</div>
+<div class="col-4"></div>
+<div class="col-4">
+   <form class="border border-primary p-4">
+    <h2 style="text-align: center; color: white;">Login </h2>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="mb-2" style="color: white;">Account Number</label>
+    <input type="text" (change)="acnoChange($event)" class="form-control" [placeholder]="acstr">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label" style="color: white;">Password</label>
+    <input type="password" (change)="pswdChange($event)" placeholder="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <label class="form-check-label" style="color: white;" for="exampleCheck1">New User?</label>
+  <a href="" class="mx-2">Register</a>
+  </div>
+<div style="text-align: center;"><button (click)="login()" type="button" class="btn btn-primary">Submit</button></div>
+</form>
+</div>
+</div>
+
+</div>
