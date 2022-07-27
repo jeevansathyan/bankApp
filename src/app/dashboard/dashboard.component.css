@@ -1,0 +1,19 @@
+.dash-secnav{
+background-color: black;
+height: 3em;
+}
+.secnav-link{
+  text-decoration: none;
+padding: 26px;
+}
+.secnav-span{
+width: fit-content;
+height: fit-content;
+
+}
+.secnav-span:hover{
+background-color: cornflowerblue;
+}
+.secnav-link:focus{
+background-color: aliceblue;
+}

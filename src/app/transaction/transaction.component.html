@@ -1,0 +1,19 @@
+<app-dashboard></app-dashboard>
+<h2 style="color: white;text-align: center;">Transaction history</h2>
+<div class="container">
+  <table class="trns-table mt-5 table">
+    <thead class="table-dark">
+      <tr>
+        <th>Type</th>
+        <th>amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of transactions">
+        <th>{{t.type}}</th>
+        <th>{{t.amnt}}</th>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

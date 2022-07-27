@@ -1,0 +1,45 @@
+<app-dashboard></app-dashboard>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h1>Deposit</h1>
+      <form action="" (ngSubmit)="deposit()">
+        <div>
+          <label for="">Account number</label>
+          <input type="text" class="form-control" name="acno" [(ngModel)]="acno">
+        </div>
+        <div>
+          <label for="">Password</label>
+          <input type="password" class="form-control" name="pswd" [(ngModel)]="pswd">
+        </div>
+        <div>
+          <label for="">Amount</label>
+          <input type="text" class="form-control" name="amnt" [(ngModel)]="amnt">
+        </div>
+        <div>
+          <button type="submit" class="btn btn-info">deposit</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-6">
+      <h1>Withdraw</h1>
+      <form action="" (ngSubmit)="withdraw()">
+        <div>
+          <label for="">Account number</label>
+          <input type="text" class="form-control" name="acno1" [(ngModel)]="acno1">
+        </div>
+        <div>
+          <label for="">Password</label>
+          <input type="password" class="form-control" name="pswd1" [(ngModel)]="pswd1">
+        </div>
+        <div>
+          <label for="">Amount</label>
+          <input type="text" class="form-control" name="amnt1" [(ngModel)]="amnt1">
+        </div>
+        <div>
+          <button type="submit" class="btn btn-info">Withraw</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

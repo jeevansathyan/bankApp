@@ -9,21 +9,21 @@
 </div>
 <div class="col-4"></div>
 <div class="col-4">
-   <form class="border border-primary p-4">
+   <form class="border border-primary p-4" (ngSubmit)="login()">
     <h2 style="text-align: center; color: white;">Login </h2>
-  <div class="mb-3">
+     <div class="mb-3">
     <label for="exampleInputEmail1" class="mb-2" style="color: white;">Account Number</label>
-    <input type="text" #acno class="form-control" [placeholder]="acstr">
+    <input type="text"[(ngModel)]='acno' name="acno"   class="form-control" [placeholder]="acstr">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label" style="color: white;">Password</label>
-    <input type="password" #pswd placeholder="password" class="form-control" id="exampleInputPassword1">
+    <input type="password" placeholder="password" [(ngModel)]="pswd" name="pswd"  class="form-control">
   </div>
   <div class="mb-3 form-check">
     <label class="form-check-label" style="color: white;" for="exampleCheck1">New User?</label>
-  <a href="" class="mx-2">Register</a>
+  <a href="" class="mx-2" routerLink="register">Register</a>
   </div>
-<div style="text-align: center;"><button (click)="login(acno,pswd)" type="button" class="btn btn-primary">Submit</button></div>
+<div style="text-align: center;"><button type="submit" class="btn btn-primary">Submit</button></div>
 </form>
 </div>
 </div>
